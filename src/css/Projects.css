@@ -20,7 +20,7 @@
 .language-list-item {
     min-height: 2rem;
     user-select: none;
-    font-family: 'AnticDidone';
+    font-weight: 300;
     font-size: 18px;
 }
 

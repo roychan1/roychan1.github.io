@@ -1,0 +1,36 @@
+#load-screen {
+    background-color: #5F7161;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(218, 218, 218);
+}
+
+.circle-outer {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    /* background: conic-gradient(white 30deg, transparent 30deg 330deg); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-inner {
+    height: 117px;
+    width: 117px;
+    border-radius: 50%;
+    background-color: #5F7161;
+}
+
+.status-text {
+    position: absolute;
+    font-weight: 300;
+    max-width: 110px;
+    text-align: center;
+}
