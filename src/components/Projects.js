@@ -13,9 +13,9 @@ const info = [
     {
         title: "Closet Mobile App (React Native)",
         image: "/images/closet-thumbnail.png",
-        description: "A react native mobile app, served as a social media for sharing design, fashion, and other inspirations.",
+        description: "(IN PROGRESS) A react native mobile app, served as a social media for sharing design, fashion, and other inspirations.",
         tags: [1, 2, 3, 4, 7, 9],
-        link: ""
+        link: "https://github.com/roychan1/Closet-React-Native"
     },
     {
         title: "Fabflix Webapp",

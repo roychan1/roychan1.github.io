@@ -8,11 +8,11 @@ export const CustomFooter = () => {
                     <div className="description">
                         <span style={{fontWeight: 700, fontSize: '30px'}}>ROY CHAN</span>
                         <span>Welcome to my website! I am a 4th year computer science B.S. student at University of California, Irvine. Currently I am looking for a full time software engineer position in California. I have experience using frameworks such as React, React Native, Swift, etc. with projects you can find here and more!</span>
-                        <span>A little about myself... I was born in Hong Kong and moved to the U.S. at the age of 11 and have lived in the bay area ever since! I enjoy playing badminton and watching anime in my free time, tell me all about your anime recommendations! (hopefully I haven't watched it already)</span>
+                        <span>A little about myself... I was born in Hong Kong and moved to the U.S. at the age of 11 and have lived in the bay area ever since! In my free time, I like to play badminton, watch anime, and occasionally learn some new skills!</span>
                         <span>To contact me, please use the social medias and email address I have provided below, thanks!</span>
                     </div>
                     <div className="picture">
-                        <img alt="face" src="images/face.png" className="icon"></img>
+                        <img alt="face" src="images/portrait.jpg" className="icon"></img>
                     </div>
                 </div>
                 <div className="social">
