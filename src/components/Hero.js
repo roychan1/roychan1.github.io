@@ -108,7 +108,7 @@ export const Hero = ({ setLoadPercentage, setReady }) => {
                 <h3>Hi! My name is Roy!</h3>
             </div>
             {/* memoized ModelPureJS so it doesn't rerender with state change */}
-            <MemoizedModel setLoadPercentage={setLoadPercentage} setReady={setReady}/>
+            {/* <MemoizedModel setLoadPercentage={setLoadPercentage} setReady={setReady}/> */}
         </div>
     );
 }

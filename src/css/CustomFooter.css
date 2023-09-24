@@ -2,38 +2,38 @@ footer {
     background-color: #5F7161;
     min-height: 100vh;
     display: flex;
+    justify-content: center;
 }
 
 .about-me {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin: 80px 50px 50px 50px;
+    margin: 80px 20px 20px 20px;
     color: white;
     font-weight: 300;
+    max-width: 1320px;
 }
 
 .profile {
-    flex: 3;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.profile .description {
+.description {
     flex: 3;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 20px;
 }
 
 .profile .picture {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.profile .picture .icon {
+.icon {
     aspect-ratio: 1/1;
     width: 250px;
     object-fit: cover;
@@ -44,9 +44,10 @@ footer {
 .social {
     flex: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     user-select: none;
+    flex-wrap: wrap;
 }
 
 .social img {
@@ -55,9 +56,7 @@ footer {
 }
 
 .social div {
-    margin: 20px;
-    width: 50px;
-    height: 50px;
+    margin: 30px 20px;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -80,6 +79,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 @keyframes expand {
@@ -109,6 +109,7 @@ footer {
     padding: 15px;
     border-radius: 10px;
     opacity: 0%;
+    visibility: hidden;
 }
 
 @keyframes fade {
@@ -121,4 +122,27 @@ footer {
     100% {
         opacity: 0%;
     }
+}
+
+/* mobile */
+@media screen and (max-width: 660px) {
+    .social {
+        justify-content: center;
+    }
+    
+    .profile {
+        flex-direction: column-reverse;
+    }
+    .icon {
+        width: 200px;
+    }
+    .description {
+        flex: 1;
+        overflow-y: scroll;
+        max-height: 300px;
+    }
+}
+
+.email span {
+    font-size: 0.8em;
 }

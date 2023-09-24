@@ -14,20 +14,23 @@ function App() {
 
   return (
     <div className="App">
-      <LoadScreen 
+      {/* <LoadScreen 
         loadPercentage={loadPercentage} 
         ready={ready}
-      />
-      {ready && <CustomNavbar /> }
+      /> */}
+      {/* {ready && <CustomNavbar /> } */}
+      <CustomNavbar />
       <div id="home" />
       <Hero 
         setLoadPercentage={setLoadPercentage}
         setReady={setReady}
       />
       <div id="projects" />
-      {ready && <Projects /> }
+      {/* {ready && <Projects /> } */}
+      <Projects />
       <div id="about-me" />
-      {ready && <CustomFooter /> }
+      {/* {ready && <CustomFooter /> } */}
+      <CustomFooter />
     </div>
   );
 }
