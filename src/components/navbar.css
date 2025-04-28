@@ -1,0 +1,49 @@
+.hamburger-toggle {
+    width: 3rem;
+    height: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar {
+    height: 0.05rem;
+    background-color: white;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.open .bar:nth-child(1) {
+    transform-origin: top left;
+    transform: rotate(36deg);
+}
+
+.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+    transform-origin: top left;
+    transform: rotate(-36deg);
+}
+
+.menu {
+    transition: all 1s ease;
+    width: 300px;
+    left: -300px;
+    opacity: 0;
+}
+
+.open .menu {
+    transform: translateX(300px);
+    opacity: 1;
+}
+
+.overlay {
+    display: none;
+}
+
+.open .overlay {
+    transition: opacity 1s ease;
+    display: block;
+    opacity: 0.4;
+}

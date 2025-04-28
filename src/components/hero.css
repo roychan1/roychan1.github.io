@@ -1,0 +1,15 @@
+.hero {
+    opacity: 0;
+    animation: hero-appear linear;
+    animation-timeline: view();
+    animation-range: entry 100% exit 80%;
+}
+
+@keyframes hero-appear {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
