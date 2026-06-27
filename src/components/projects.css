@@ -1,0 +1,107 @@
+.projects {
+    animation: projects-appear linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes projects-appear {
+    entry 0% {
+        opacity: 0;
+    }
+    entry 100% {
+        opacity: 1;
+    }
+    exit 0%,
+    exit 100% {
+        opacity: 1;
+    }
+}
+
+.slideshow-viewport {
+    aspect-ratio: 3 / 2;
+    width: 100%;
+    background: #111;
+    border: 1px solid #222;
+}
+
+.slideshow-track {
+    display: flex;
+    height: 100%;
+    transition: transform 500ms ease-out;
+}
+
+.slideshow-slide {
+    flex: 0 0 100%;
+    height: 100%;
+}
+
+.slideshow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    backdrop-filter: blur(4px);
+}
+
+.slideshow-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.slideshow-btn--prev {
+    left: 1rem;
+}
+
+.slideshow-btn--next {
+    right: 1rem;
+}
+
+.slideshow-counter {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.25rem 0.75rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    backdrop-filter: blur(4px);
+}
+
+.slideshow-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: #333;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.slideshow-dot.active {
+    background: white;
+    transform: scale(1.25);
+}
+
+.slideshow-dot:hover:not(.active) {
+    background: #666;
+}
+
+.project-tag {
+    padding: 0.25rem 0.75rem;
+    border: 1px solid #333;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    color: #ccc;
+}
